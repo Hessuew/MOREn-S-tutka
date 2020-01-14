@@ -42,10 +42,10 @@
           v-for="hWeather in weather.hourlyWeather"
           :key="hWeather.id"
         >
-          <v-card outlined class="text-center" >
+          <v-card outlined class="text-center">
             <v-card-text class="customizedPadding">
               <v-list-item two-line class="customizedPadding">
-                <v-list-item-content>
+                <v-list-item-content class="imgToCenter" >
                   <v-list-item-subtitle class="mediumTextGrey">{{ hWeather.time}}</v-list-item-subtitle>
                   <img class="smallImgScaling" :src="hWeather.icon" />
                   <v-list-item-subtitle class="mediumTextBlack">{{ hWeather.temp}}</v-list-item-subtitle>
