@@ -1,6 +1,13 @@
-# my-app
+## Project setupnpm install
+npm install vuetify
+npm install vuex
+npm install axios
+npm I axios-extensions -S
+npm install --save-dev jest
+vue add @vue/unit-jest
 
-## Project setup
+Compiles and hot-reloads for development
+npm run serve
 ```
 npm install
 ```
@@ -9,16 +16,3 @@ npm install
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
