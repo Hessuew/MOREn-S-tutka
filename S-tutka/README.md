@@ -1,3 +1,5 @@
+# OpenWeatherMap API key: 
+
 ## Project setupnpm install
 npm install vuetify
 npm install vuex
