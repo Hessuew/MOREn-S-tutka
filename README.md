@@ -42,6 +42,3 @@ vue add @vue/unit-jest
 ```
 npm run serve
 ```
-
-
-```
