@@ -1,5 +1,6 @@
 import axios from "axios";
 import { throttleAdapterEnhancer } from "axios-extensions";
+import store from "@/store/index";
 
 const throttleConfig = {
     threshold: 120*1000 
@@ -18,47 +19,42 @@ const errorInterceptor = error => {
     switch (error.response.status) {
         case 400:
             window.console.error(error.response.status, error.message);
-            this.$store.dispatch("snackbar/setSnackbar", {
+            store.dispatch("snackbar/setSnackbar", {
                 showing: true,
                 text: error.message,
                 timeout: 10000,
                 color: "error"
             });
 
-            //this.$notify({ group: "error-notification", title: "Nothing to display", text: "Data Not Found" });
             break;
         case 408:
             window.console.error(error.response.status, error.message);
-            this.$store.dispatch("snackbar/setSnackbar", {
+            store.dispatch("snackbar/setSnackbar", {
                 showing: true,
                 text: error.message,
                 timeout: 10000,
                 color: "error"
             });
 
-            //this.$notify({ group: "error-notification", title: "Request Timeout", text: "The server timed out waiting for the request" });
             break;
         case 429:
             window.console.error(error.response.status, error.message);
-            this.$store.dispatch("snackbar/setSnackbar", {
+            store.dispatch("snackbar/setSnackbar", {
                 showing: true,
                 text: error.message,
                 timeout: 10000,
                 color: "error"
             });
 
-            //notify.noti("Too Many Requests", "User has sent too many requests in a given amount of time");
             break;
         default:
             window.console.error(error.response.status, error.message);
-            this.$store.dispatch("snackbar/setSnackbar", {
+            store.dispatch("snackbar/setSnackbar", {
                 showing: true,
-                text: error.message,
+                text: "Server error",
                 timeout: 10000,
                 color: "error"
             });
-
-        //this.$notify({ group: "error-notification", title: "Server error", text: "" });
 
     }
     return Promise.reject(error);
@@ -66,6 +62,7 @@ const errorInterceptor = error => {
 const responseInterceptor = response => {
     switch (response.status) {
         case 200:
+            //tämä on tehty jatkokehitystä varten, tällä hetkellä ei käytännöllinen
             break;
         default:
     }
