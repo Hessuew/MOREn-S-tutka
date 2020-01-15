@@ -7,17 +7,17 @@
     max-width: 100%;
   }
   .my-text-style .v-label {
-    color: #262626 !important;
+    color: #262626;
   }
   .v-card__text.customizedPadding {
     padding: 0;
   }
-  .v-list-item {
+  .v-list-item.customizedPadding {
     padding: 0;
   }
-  .v-list-item__content {
+  .v-list-item__content{
     padding-top: inherit;
-    padding-bottom: 0 !important;
+    padding-bottom: 0;
   }
   .v-list-item__title.cityNameText {
     font-size: 19pt;
