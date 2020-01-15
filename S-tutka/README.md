@@ -1,6 +1,6 @@
 # OpenWeatherMap API key: 
 
-## Project setupnpm install
+## Project setup npm install
 npm install vuetify
 npm install vuex
 npm install axios
