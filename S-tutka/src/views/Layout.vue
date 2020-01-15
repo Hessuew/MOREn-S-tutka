@@ -54,12 +54,11 @@ export default {
   mounted() {
     if (this.allWeathers < 1) {
       this.getWeathers()
-        .then(res => {
+        .then(() => {
           this.$store.dispatch("snackbar/setSnackbar", {
             showing: true,
             text: "Weathers loaded successfully"
           });
-          window.console.log(res);
         })
         .catch(error => {
           this.$store.dispatch("snackbar/setSnackbar", {
