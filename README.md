@@ -1,5 +1,5 @@
 # MOREn Säätutka
-Ennakkotehtävä 
+Ennakkotehtävä
 
 Tein sovelluksen käyttäen framework:nä vue:a ja siihen lisäosia vuex ja vuetify.
 
@@ -28,7 +28,7 @@ Minulla oli jo parsiminen tehty myös sademäärälle, mutta sen puutteen vuoksi
 Yritin ladata Jest ja Vue Test Utils testaustyökaluja, mutta en saanut ladattua Jest:ä (lataus keskeytyi tiettyyn kohtaan).
 Kirjoitin kuitenkin yhden testin ja lisäsin asennusohjeeseen Jest ja Vue Test Utils latausten asennus scriptit.
 
-## ADD OpenWeatherMap KEY to location: src>modules>connectionModules>connectionToAPI>line 6 const KEY: 
+## Lisää OpenWeatherMap KEY sijaintiin: src>modules>connectionModules>connectionToAPI>line 6 const KEY: 
 
 ## Project setup
 ```
