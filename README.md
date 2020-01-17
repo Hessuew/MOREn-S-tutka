@@ -1,7 +1,7 @@
 # MOREn Säätutka
 Ennakkotehtävä 
 
-Tein sovelluksen käyttäen framework:nä vue:a ja siihen lisäosian vuex ja vuetify.
+Tein sovelluksen käyttäen framework:nä vue:a ja siihen lisäosia vuex ja vuetify.
 
 ## Käytön helppous ja tietojen kattavuus
 
@@ -10,21 +10,23 @@ Sovellus toimii kokonaisuudessaan ja kaikki tarvittavat tiedot tulevat käyttäj
 
 Kokonaisuuden pitäisi mahdollistaa haluttaessa sovelluksen hyvät jatkokehitysmahdollisuudet.
 View:t, komponentit, store ja tyylit on jaettu selkeästi osiin, jotta niitä pystyy tarkastelemaan helposti.
+Jos komponentteja tai muitakin osia olisis tullut jakaa vielä enemmän ja pienempiin osiin, sen tekeminen 
+jatkokehityksen ei pitäisi olla vaikeaa.
 
 ## Puuttuvaa/vajaata
 
-Sain tehtyä kaiken ennakkotehtävästä, kuitenkin pari modifikaatiota olisi tarpeen:
+Sain tehtyä kaiken ennakkotehtävästä, kuitenkin pari muutosta olisi tarpeen:
 
 ### Hetkellisen sään haku ei palauta rajapinnasta ymmärtääkseni sademäärää 
 (ainakaan jos oikein ymmärsin)
 
-Minulla oli jo parsiminen tehty myös sademäärälle, mutta sen puutteen vuoksi kopioin hetkellisen sademärään 
+Minulla oli jo parsiminen tehty myös sademäärälle, mutta sen puutteen vuoksi rajapinnan vastauksessa (paikkakunnan hetkellisen sää haku id: pohjalta esim. http://api.openweathermap.org/data/2.5/weather?id=634964&units=metric&appid=) kopioin hetkellisen sademärään 
 3h välisen ennusteen ensimmäisesestä sademäärästä.
 
 ### Testit eivät ole testattu
 
-Yritin ladata Jest ja Vue Test Utils testaustyökaluja, mutta Jest ei suostunut latautumaan (latasi siis pitkään ilman mitään etenemistä).
-Kirjoitin kuitenkin yhden testin ja lisäsin asennusohjeeseen molempien työkalujen latauksen asennus scriptit.
+Yritin ladata Jest ja Vue Test Utils testaustyökaluja, mutta en saanut ladattua Jest:ä (lataus keskeytyi tiettyyn kohtaan).
+Kirjoitin kuitenkin yhden testin ja lisäsin asennusohjeeseen Jest ja Vue Test Utils latausten asennus scriptit.
 
 ## Project setup
 ```
