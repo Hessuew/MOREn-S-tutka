@@ -9,7 +9,7 @@
       v-model="snackbar.showing"
       :timeout="snackbar.timeout"
       :color="snackbar.color"
-      :style="`top: ${(index * 60) + 20}px`"
+      :style="`top: ${(index * 100) + 20}px`"
     >
       {{snackbar.text}}
       <v-btn text @click="snackbar.showing = false">Close</v-btn>
