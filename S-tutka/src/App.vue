@@ -5,7 +5,7 @@
     </v-content>
     <v-snackbar
       v-for="(snackbar, index) in snackbars.filter(s => s.showing)"
-      :key="snackbar.text + Math.random()"
+      :key="snackbar.text + index"
       v-model="snackbar.showing"
       :timeout="snackbar.timeout"
       :color="snackbar.color"
